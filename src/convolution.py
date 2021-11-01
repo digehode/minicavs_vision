@@ -9,13 +9,13 @@ if image is None:
     sys.exit()
     
 # Create the kernel
-kernel1 = np.array([[0, 0, 0],
+kernel = np.array([[0, 0, 0],
                     [0, 1, 0],
                     [0, 0, 0]])
 
 
 # Apply it to the image to create a new image
-identity = cv2.filter2D(src=image, ddepth=-1, kernel=kernel1)
+identity = cv2.filter2D(src=image, ddepth=-1, kernel=kernel)
 
 
 #Display Images
